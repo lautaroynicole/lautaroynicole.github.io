@@ -6,6 +6,7 @@ import Footer from './Footer'
 import Content from './Content'
 
 class Home extends Component {
+
   render(){
     return(
       <div className="site-wrap">

@@ -6,11 +6,19 @@ import Header from './Header'
 import Footer from './Footer'
 
 class Album extends Component {
+
+constructor(){
+  super();
+  window.loadLightGallery();
+  
+}
+  
+componentDidMount(){
+    window.loadLightGallery();
+  }
     render(){
       return(
         <div className="site-wrap">
-        <MenuMobile/>
-        <Header/>
         <div class="site-section"  data-aos="fade">
         <div class="container-fluid">
           
@@ -34,7 +42,7 @@ class Album extends Component {
           </div>
         </div>
       </div>
-        <Footer/>
+      
       </div>
         
         
